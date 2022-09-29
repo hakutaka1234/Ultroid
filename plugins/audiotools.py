@@ -33,7 +33,7 @@ from . import (
 __doc__ = get_help("help_audiotools")
 
 
-@ultroid_cmd(pattern="makevoice$")
+@ultroid_cmd(pattern="vn$")
 async def vnc(e):
     if not e.reply_to:
         return await eod(e, get_string("audiotools_1"))
